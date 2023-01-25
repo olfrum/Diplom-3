@@ -18,14 +18,7 @@ public class BrowserRule extends ExternalResource {
     @Override
     protected void before() throws Throwable {
 
-        String browser = System.getenv("browser");
-
-        if ("ya".equals(browser)) {
-            driver = new ChromeDriver();
-        } else {
-            driver = new ChromeDriver();
-        }
-
+        driver = new ChromeDriver();
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(ofSeconds(15));

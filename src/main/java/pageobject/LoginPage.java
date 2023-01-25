@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage extends Wrapper {
 
     private final By inputEmailField = By.xpath(".//fieldset[1]//input");
-    private final By passwordInpuntField =  By.xpath(".//fieldset[2]//input");
+    private final By passwordInputField =  By.xpath(".//fieldset[2]//input");
     private final By loginButton = By.xpath(".//button[text()='Войти']");
     private final By loginHeader = By.xpath(".//h2[text()='Вход']");
 
@@ -25,8 +25,8 @@ public class LoginPage extends Wrapper {
         return this;
     }
 
-    public LoginPage sendPasswordFiels(String pass){
-        input(passwordInpuntField, pass);
+    public LoginPage sendPasswordFields(String pass){
+        input(passwordInputField, pass);
         return this;
     }
     public LoginPage loginButtonClick(){

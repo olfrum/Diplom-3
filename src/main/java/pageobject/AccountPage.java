@@ -20,6 +20,11 @@ public class AccountPage extends Wrapper {
         super(driver);
     }
 
+    public AccountPage clickStellarBurgers() {
+        click(stellarBurgers);
+        return this;
+    }
+
     public AccountPage clickTextConstructor() {
         click(textConstructor);
         return this;

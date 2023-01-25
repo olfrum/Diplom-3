@@ -28,7 +28,7 @@ public class LogoutTest {
         loginPage
             .headerLogoWait()
             .sendEmailField(EMAIL)
-            .sendPasswordFiels(PASSWORD)
+            .sendPasswordFields(PASSWORD)
             .loginButtonClick();
         accountPage
             .clickButtonPersonalArea()

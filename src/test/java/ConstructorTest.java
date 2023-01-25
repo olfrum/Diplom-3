@@ -28,7 +28,7 @@ public class ConstructorTest {
         loginPage
             .headerLogoWait()
             .sendEmailField(EMAIL)
-            .sendPasswordFiels(PASSWORD)
+            .sendPasswordFields(PASSWORD)
             .loginButtonClick();
         accountPage
             .clickButtonPersonalArea()
@@ -40,6 +40,21 @@ public class ConstructorTest {
     @DisplayName("click logo burger")
     @Description("result : order button available")
     public void checkEnterBurger(){
+        AccountPage accountPage = new AccountPage(browserRule.getDriver());
+        LoginPage loginPage = new LoginPage(browserRule.getDriver());
+        MainPage mainPage = new MainPage(browserRule.getDriver());
 
+        mainPage
+                .openBaseUri()
+                .loginButtonClick();
+        loginPage
+                .headerLogoWait()
+                .sendEmailField(EMAIL)
+                .sendPasswordFields(PASSWORD)
+                .loginButtonClick();
+        accountPage
+                .clickButtonPersonalArea()
+                .clickStellarBurgers()
+                .checkTextCreateOrder("Оформить заказ");
     }
 }

@@ -29,7 +29,7 @@ public class AuthTest {
         loginPage
             .headerLogoWait()
             .sendEmailField(EMAIL)
-            .sendPasswordFiels(PASSWORD)
+            .sendPasswordFields(PASSWORD)
             .loginButtonClick();
         mainPage
             .isOrderButtonDisplayed();
@@ -48,7 +48,7 @@ public class AuthTest {
         loginPage
                 .headerLogoWait()
                 .sendEmailField(EMAIL)
-                .sendPasswordFiels(PASSWORD)
+                .sendPasswordFields(PASSWORD)
                 .loginButtonClick();
         mainPage
                 .isOrderButtonDisplayed();
@@ -67,7 +67,7 @@ public class AuthTest {
         loginPage
                 .headerLogoWait()
                 .sendEmailField(EMAIL)
-                .sendPasswordFiels(PASSWORD)
+                .sendPasswordFields(PASSWORD)
                 .loginButtonClick();
         mainPage
                 .isOrderButtonDisplayed();
@@ -87,7 +87,7 @@ public class AuthTest {
         loginPage
                 .headerLogoWait()
                 .sendEmailField(EMAIL)
-                .sendPasswordFiels(PASSWORD)
+                .sendPasswordFields(PASSWORD)
                 .loginButtonClick();
         mainPage
                 .isOrderButtonDisplayed();
